@@ -1,3 +1,7 @@
+.info{
+  padding-bottom: 0px;
+}
+
 .info .container-info{
   display: flex;
   justify-content: space-around;
@@ -71,6 +75,8 @@ b{
 
 .header-footer{
   border-top: 1px solid #F6F5F2;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  padding: 0px 12px 6px 12px;
 }
 
 .header-footer nav ul{
@@ -146,10 +152,8 @@ b{
   }
 }
 
-
 @media (max-width: 300px) {
   .container-main form .search{
     width: 13.125rem;
   }
-
 }

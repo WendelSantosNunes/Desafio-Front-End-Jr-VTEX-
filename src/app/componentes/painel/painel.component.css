@@ -1,0 +1,66 @@
+.painel{
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%), url("../../../assets/Promotion.png");
+
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  color:#fff;
+}
+
+
+.painel-text h2{
+  width: 606px;
+  font-size: 48px;
+  margin-top: 52px;
+}
+
+.painel-text H3{
+  font-size: 42px;
+  margin-top: 1rem;
+}
+
+.painel-text button{
+  background-color: #F71963;
+  font-size: 18px;
+
+  padding: 16px 63px;
+  margin: 48px 0px 52px 0px;
+
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.painel-text button:hover{
+  background-color: #F71995;
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .painel-text h2{
+    font-size: 32px;
+    width: 406px;
+  }
+
+  .painel-text H3{
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 400px) {
+  .painel-text h2{
+    font-size: 24px;
+    width: 300px;
+  }
+
+  .painel-text H3{
+    font-size: 18px;
+  }
+
+  .painel-text button{
+    font-size: 16px;
+  }
+
+}
