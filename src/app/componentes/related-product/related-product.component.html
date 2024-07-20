@@ -1,0 +1,59 @@
+<div class="container">
+  <div class="related">
+    <h2>Produtos relacionados</h2>
+  </div>
+
+  <div class="product">
+    <div>
+      <p>CELULAR</p>
+    </div>
+
+    <div>
+      <p>ACESSÓRIOS</p>
+    </div>
+
+    <div>
+      <p>TABLETS</p>
+    </div>
+
+    <div>
+      <p>NOTEBOOKS</p>
+    </div>
+
+    <div>
+      <p>TVS</p>
+    </div>
+
+    <div>
+      <p>VER TODOS</p>
+    </div>
+  </div>
+
+  <div class="carrosel-container">
+    <img src="../../../assets/Vector left.svg" (click)="prevBtn()" class="vector-left" alt="">
+
+      <div class="carousel container">
+
+      <div *ngFor="let product of listProduct" >
+        <div class="card">
+          <img src={{product.image}} alt={{product.alt}}>
+
+          <p class="description">{{product.description}}</p>
+
+          <h4><s>{{product.oldPrice}}</s></h4>
+          <h3>{{product.NewPrice}}</h3>
+          <p class="installments">{{product.installments}}</p>
+          <p class="front">{{product.front}}</p>
+
+          <div class="buy">
+            <button>COMPRAR</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <img src="../../../assets/Vector right.svg" (click)="nextBtn()" class="vector-right" alt="">
+  </div>
+
+</div>
+

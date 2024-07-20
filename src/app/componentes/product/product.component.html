@@ -1,10 +1,13 @@
-<section class="container product">
-  <div *ngFor="let category of productCategoryList">
-    <div class="container-product {{category.select}}" >
-      <div>
-        <img src={{category.link}} alt={{category.alt}}>
+<section>
+  <div class="container product">
+    <div *ngFor="let category of productCategoryList">
+      <div class="container-product {{category.select}}" >
+        <div>
+          <img src={{category.link}} alt={{category.alt}}>
+        </div>
+        <p>{{category.text}}</p>
       </div>
-      <p>{{category.text}}</p>
     </div>
   </div>
+  <app-related-product></app-related-product>
 </section>
