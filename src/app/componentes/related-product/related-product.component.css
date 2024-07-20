@@ -135,6 +135,7 @@
 
 .store {
   display: flex;
+  gap: 32px;
   justify-content: space-between;
 
   margin: 3.875rem 0rem 3.75rem 0rem;
@@ -143,7 +144,7 @@
 .store .store-card {
   background-image: url("../../../assets/Apple.png");
 
-  max-width: 36.875rem;
+  max-width: 35.875rem;
   width: 100%;
 
   background-repeat: no-repeat;
@@ -167,6 +168,11 @@
 
 .store .store-card p {
   margin-top: 1.5rem;
+}
+
+.store .store-card .store-decription {
+  max-width: 186px;
+  width: 100%;
 }
 
 .store .store-card button {
@@ -194,6 +200,14 @@
   font-weight: bold;
 }
 
+.store .store-card.product-card{
+  max-width: 36.875rem;
+}
+
+.store .product-card h3{
+  margin-top: 3.75rem;
+}
+
 @media (max-width: 1200px) {
   .related::before,
   .related::after {
@@ -205,6 +219,11 @@
   .related::before,
   .related::after {
     width: 25%;
+  }
+
+  .store {
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
 
