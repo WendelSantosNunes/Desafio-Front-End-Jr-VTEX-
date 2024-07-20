@@ -33,25 +33,24 @@
     <img src="../../../assets/Vector left.svg" (click)="prevBtn()" class="vector-left" alt="">
 
       <div class="carousel container">
+        <div *ngFor="let product of listProduct" >
+          <div class="card">
+            <img src={{product.image}} alt={{product.alt}}>
 
-      <div *ngFor="let product of listProduct" >
-        <div class="card">
-          <img src={{product.image}} alt={{product.alt}}>
+            <p class="description">{{product.description}}</p>
 
-          <p class="description">{{product.description}}</p>
+            <h4><s>{{product.oldPrice}}</s></h4>
+            <h3>{{product.NewPrice}}</h3>
+            <p class="installments">{{product.installments}}</p>
+            <p class="front">{{product.front}}</p>
 
-          <h4><s>{{product.oldPrice}}</s></h4>
-          <h3>{{product.NewPrice}}</h3>
-          <p class="installments">{{product.installments}}</p>
-          <p class="front">{{product.front}}</p>
-
-          <div class="buy">
-            <button>COMPRAR</button>
+            <div class="buy">
+              <button>COMPRAR</button>
+            </div>
           </div>
         </div>
-      </div>
-
     </div>
+
     <img src="../../../assets/Vector right.svg" (click)="nextBtn()" class="vector-right" alt="">
   </div>
 
@@ -109,7 +108,6 @@
 
     <div class="store-card product-card">
       <div>
-
         <h3>Produtos</h3>
 
         <div class="store-decription">

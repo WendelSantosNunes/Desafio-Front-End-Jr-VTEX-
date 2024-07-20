@@ -1,0 +1,21 @@
+<section class="container">
+  <div class="title">
+    <h2>Navegue por marcas</h2>
+  </div>
+
+  <div class="carrosel-marcas">
+    <img src="../../../assets/Vector left.svg" (click)="prevBtn()" class="vector-left" alt="Image of a left arrow">
+
+    <div class="carousel-marcas-container container">
+
+      <div *ngFor="let marca of marcas" >
+        <div class="card">
+          <img src={{marca.image}} alt={{marca.alt}}>
+        </div>
+      </div>
+
+    </div>
+
+    <img src="../../../assets/Vector right.svg" (click)="nextBtn()" class="vector-right" alt="Image of a rigth arrow">
+  </div>
+</section>

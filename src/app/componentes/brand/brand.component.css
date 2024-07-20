@@ -1,0 +1,61 @@
+.title {
+  text-align: center;
+}
+
+.title h2{
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: #F71963;
+}
+
+.carrosel-marcas {
+  display: flex;
+  position: relative;
+}
+
+.vector-left,
+.vector-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.vector-left {
+  left: -60px;
+}
+
+.vector-right {
+  right: -60px;
+}
+
+.carousel-marcas-container {
+  overflow: hidden;
+
+  display: flex;
+  gap: 2.5rem;
+
+  margin-top: 1.25rem;
+  transition: scroll 0.10s ease;
+  scroll-behavior: smooth;
+}
+
+.carousel-marcas-container .card {
+  box-shadow: 0.1875rem 0.1875rem 0.3125rem rgba(0, 0, 0, 0.3);
+
+  padding: 4.625rem 1.25rem 4.625rem 1.25rem;
+  border-radius: 120px;
+}
+
+.carousel-marcas-container .card button{
+  margin-top: 1rem;
+  padding: 0.875rem 5.3125rem;
+
+  background-color: #F71963;
+  border: none;
+  border-radius: 0.25rem;
+
+  color: #FFF;
+  font-weight: bold;
+  cursor: pointer;
+}

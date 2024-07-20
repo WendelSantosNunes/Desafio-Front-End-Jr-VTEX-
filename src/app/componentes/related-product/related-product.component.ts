@@ -81,14 +81,14 @@ export class RelatedProductComponent implements OnInit {
   public prevBtn() {
     const container = document.querySelector('.carousel');
     if (container) {
-      container.scrollLeft -= 300;
+      container.scrollLeft -= 340;
     }
   }
 
   public nextBtn() {
     const container = document.querySelector('.carousel');
     if (container) {
-      container.scrollLeft += 200;
+      container.scrollLeft += 340;
     }
   }
 
