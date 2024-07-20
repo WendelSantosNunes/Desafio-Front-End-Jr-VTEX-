@@ -11,7 +11,7 @@
   position: absolute;
   top: 50%;
   width: 35%;
-  height: 1px;
+  height: 0.0625rem;
   background-color: #DEDEDE;
 }
 
@@ -23,20 +23,6 @@
 .related::after {
     right: 0;
     transform: translateX(0%);
-}
-
-@media (max-width: 1200px) {
-  .related::before,
-  .related::after {
-    width: 30%;
-  }
-}
-
-@media (max-width: 992px) {
-  .related::before,
-  .related::after {
-    width: 25%;
-  }
 }
 
 /* Produtos */
@@ -142,6 +128,84 @@
 
   color: #FFF;
   font-weight: bold;
+  cursor: pointer;
+}
+
+/* Parceiros */
+
+.store {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 3.875rem 0rem 3.75rem 0rem;
+}
+
+.store .store-card {
+  background-image: url("../../../assets/Apple.png");
+
+  max-width: 36.875rem;
+  width: 100%;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  border-radius: 0.8rem;
+  color: #FFF;
+}
+
+.store .store-card > div{
+  margin-left: 2.5rem;
+}
+
+.store .store-card h3 {
+  margin-top: 6.875rem;
+
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.store .store-card p {
+  margin-top: 1.5rem;
+}
+
+.store .store-card button {
+  margin: 2rem 0rem 2.5rem 0rem;
+  padding: 1rem 1.5625rem;
+
+  color: #FFF;
+  background-color: #F71963;
+  border: none;
+  border-radius: 0.625rem;
+
+  font-size: 1rem;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+/*  */
+
+.product-text{
+  text-align: center;
+}
+
+.product-text p{
+  font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+  .related::before,
+  .related::after {
+    width: 30%;
+  }
+}
+
+@media (max-width: 992px) {
+  .related::before,
+  .related::after {
+    width: 25%;
+  }
 }
 
 @media (max-width: 768px) {
