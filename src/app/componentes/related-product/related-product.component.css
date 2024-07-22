@@ -213,16 +213,6 @@
   margin-top: 3.75rem;
 }
 
-@media (max-width: 1415px) {
-  .carrosel-container {
-    width: 1280px;
-  }
-
-  .container .carousel.container {
-    width: 1280px;
-  }
-}
-
 @media (max-width: 1200px) {
   .related::before,
   .related::after {

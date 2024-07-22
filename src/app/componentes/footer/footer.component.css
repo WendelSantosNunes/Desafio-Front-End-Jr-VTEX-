@@ -1,0 +1,207 @@
+footer{
+  background-color: #2A2A2A;
+  color: #FFF;
+
+  margin-top: 5rem;
+}
+
+.footer-page{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-page .company-information{
+  display: flex;
+  justify-content: space-around;
+
+  max-width: 40.625rem;
+  width: 100%;
+
+  margin: 2.0625rem 0rem 2rem 0;
+}
+
+.footer-page .company-information div {
+  max-width: 150px;
+  width: 100%;
+}
+
+.footer-page .company-information div:last-child{
+  max-width: 200px;
+  width: 100%;
+}
+
+.footer-page h4 {
+  font-size: 0.8125rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-page ul li {
+  list-style: none;
+}
+
+.footer-page ul li a{
+  text-decoration: none;
+  color: #FFF;
+
+  font-size: 0.75rem;
+  font-weight: 200;
+}
+
+.social-media{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 4.625rem;
+}
+
+.payment{
+  display: flex;
+  gap: 1.875rem;
+  flex-wrap: wrap;
+}
+
+.register{
+  margin-top: 2.0625rem;
+
+  background-color: #FFF;
+  color: black;
+
+  border-radius: 10px;
+}
+
+.register .register-container{
+  padding: 40px 32px;
+
+  max-width: 317px;
+  width: 100%;
+
+  text-align: left;
+}
+
+.register-promotion p:nth-child(1){
+  font-size: 1.125rem;
+}
+.register-promotion b {
+  font-size: 1.18rem;
+}
+
+.registe-description {
+  font-size: 0.75rem;
+  margin: 1rem 0rem 2rem 0rem;
+
+  text-align: center;
+  color: #3F3F40;
+}
+
+.register form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.register form input{
+  max-width: 12.1875rem;
+  width: 100%;
+
+  padding: 1.0625rem 0.625rem 1.0625rem 1.5625rem;
+  border-radius: 0.25rem;
+}
+
+.register form button {
+  background-color: #F71963;
+  color: #FFF;
+
+  padding: 1.0625rem 1.3125rem;
+
+  border: none;
+  border-radius: 0.25rem;
+
+  font-size: 0.875rem;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.rights{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.25rem;
+
+  gap: 2rem;
+}
+
+.rights p {
+  max-width: 43.625rem;
+  width: 100%;
+
+  font-size: 0.625rem;
+}
+
+
+.rights div {
+  display: flex;
+  gap: 2rem;
+}
+
+
+.rights div {
+  height: 32px;
+}
+
+
+@media (max-width: 1200px) {
+  .register .register-container {
+    box-sizing: border-box;
+    max-width: 270px;
+  }
+
+  .register form {
+    flex-wrap: wrap;
+  }
+
+  .register form input {
+    max-width: 5.625rem;
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 992px) {
+  .footer-page {
+    display: block;
+  }
+
+  .footer-page .company-information{
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .footer-page .company-information{
+    margin-top: 1.5rem;
+  }
+
+  .register  {
+    max-width: 270px;
+
+    margin: 3rem auto 1rem auto;
+  }
+
+}
+
+
+@media (max-width: 576px) {
+  .rights{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rights p {
+    text-align: center;
+  }
+
+  .register div {
+    flex-wrap: wrap;
+  }
+}
