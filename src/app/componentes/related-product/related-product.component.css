@@ -76,7 +76,7 @@
   overflow: hidden;
 
   display: flex;
-  gap: 3.7rem;
+  gap: 0.8rem;
 
   margin-top: 1.25rem;
   transition: scroll 0.10s ease;
@@ -213,10 +213,36 @@
   margin-top: 3.75rem;
 }
 
+@media (max-width: 1280px) {
+  .carousel.container {
+    width: 1000px;
+  }
+
+  .vector-left {
+    left: -22px;
+  }
+
+  .vector-right {
+    right: -22px;
+  }
+}
+
 @media (max-width: 1200px) {
   .related::before,
   .related::after {
     width: 30%;
+  }
+
+  .carousel.container {
+    width: 800px;
+  }
+
+  .vector-left {
+    left: 0px;
+  }
+
+  .vector-right {
+    right: 0px;
   }
 }
 
@@ -229,6 +255,18 @@
   .store {
     justify-content: center;
     flex-wrap: wrap;
+  }
+
+  .carousel.container {
+    width: 600px;
+  }
+
+  .vector-left {
+    left: -20px;
+  }
+
+  .vector-right {
+    right: -20px;
   }
 }
 
@@ -245,6 +283,18 @@
 
   .product div:nth-child(5){
     display: none;
+  }
+
+  .carousel.container {
+    width: 300px;
+  }
+
+  .vector-left {
+    left: -5px;
+  }
+
+  .vector-right {
+    right: -5px;
   }
 }
 
@@ -282,5 +332,17 @@
   .product{
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .vector-left {
+    display: none;
+  }
+
+  .vector-right {
+    display: none;
+  }
+
+  .carousel{
+    overflow: auto;
   }
 }

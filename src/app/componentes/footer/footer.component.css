@@ -138,17 +138,14 @@ footer{
   font-size: 0.625rem;
 }
 
-
 .rights div {
   display: flex;
   gap: 2rem;
 }
 
-
 .rights div {
   height: 32px;
 }
-
 
 @media (max-width: 1200px) {
   .register .register-container {
@@ -189,7 +186,6 @@ footer{
   }
 
 }
-
 
 @media (max-width: 576px) {
   .rights{
